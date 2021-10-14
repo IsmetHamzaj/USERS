@@ -1,0 +1,15 @@
+html
+    head
+        title Person Api 
+    body
+        form(action=`http://localhost:3000/update/${data.data.data.id}` method="POST")
+            input(type="text" name="name" id="name" placeholder="data.data.data.name")
+            input(type="text" name="surname" id="surname" placeholder="data.data.data.surname")
+            input(type="email" name="email" id="email" placeholder="data.data.data.email")  
+            input(type="text" name="profession" id="profession" placeholder="data.data.data.profession")
+            input(type="text" name="image" id="image" placeholder="data.data.data.Image Url")
+            button(type="submit")Update
+
+        
+                
+        

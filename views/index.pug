@@ -1,0 +1,23 @@
+html
+    head
+        title Person Api 
+        link(src = "public/css/main.css" rel= "stylesheet")
+    body
+        h1 tralalalalla 
+        p Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde, officia. Adipisci assumenda suscipit fugiat optio voluptatibus porro vitae ut quaerat nemo tenetur? A magni tenetur doloremque inventore dolore beatae repudiandae?    
+    div.container
+        each person in data.data.data
+            div(class="pesron-card" id=person.id)
+                img.person-image(src=person.image)
+                div.person-name
+                    h1=person.name
+                    h1=person.surname
+                p=person.profession
+                p=person.email 
+                button.btn-delete Delete
+                a(href=`https://localhost:3000/update/${person.id}`)
+
+        script(src="https://unpkg.com/axios/dist/axios.min.js")
+        script(src="public/js/deleteUser.js")  
+                
+        

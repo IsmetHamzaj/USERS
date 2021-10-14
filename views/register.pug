@@ -1,0 +1,13 @@
+html 
+    head
+        title Register form
+    body 
+        if(message)
+        form(action="http://localhost:3000/register"  method="")
+            input(type="text" name="name" id="name" placeholder="name")
+            input(type="text" name="surname" id="surname" placeholder="surname")
+            input(type="email" name="email" id="email" placeholder="email")  
+            input(type="text" name="profession" id="profession" placeholder="profession")
+            input(type="text" name="image" id="image" placeholder="Image Url")   
+            button(type="submit") register
+
